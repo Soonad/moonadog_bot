@@ -1,5 +1,7 @@
 ## Moonadog
 
+<img src="dog_icon.png" alt="drawing" width="600"/>
+
 Telegram chat bot to get [Formality lib](https://github.com/moonad/Moonad/tree/master/lib) terms and information about Moonad and Formality.
 
 Telegram commands  
