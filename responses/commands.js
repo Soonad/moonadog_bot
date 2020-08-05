@@ -18,6 +18,7 @@ const beginner_guide = `
 Here are some usefull links to help you get started: 
 - [Introduction to Formality](https://github.com/moonad/Formality/blob/master/README.md)
 - [Theorem proving](https://github.com/moonad/Formality/blob/master/THEOREM_PROVING_TUTORIAL.md)
+- [FAQ](https://github.com/moonad/Formality/blob/master/FAQ.md)
 `
 
 const moonad_res = `
@@ -49,14 +50,12 @@ get_fm_version();
 /* Telegram commands
 fm_version - npm formality-lang version
 moonad - Access Moonad interface
-provit - Access Provit example (sketch)
 beginners_guide - Useful resources to start learning Formality
 qtd_terms - Get the actual quantity of Formality terms
 */
 module.exports = (bot) => {
   bot.hears('/fm_version', (ctx) => ctx.reply("npm formality-lang version: "+fm_version));
   bot.hears('/moonad', (ctx) => ctx.replyWithMarkdown(moonad_res));
-  bot.hears('/provit', (ctx) => ctx.replyWithMarkdown(provit_res));
   bot.hears("/beginners_guide", (ctx => ctx.replyWithMarkdown(beginner_guide)));
   bot.hears("/qtd_terms", (ctx => ctx.replyWithMarkdown(qtd_terms ? 
     "We have "+qtd_terms+" .fm files!" : "something went wrong with the request")));
