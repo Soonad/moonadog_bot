@@ -1,7 +1,7 @@
 const fs = require("fs");
 var path = require("path");
 
-const lib_short_path = '../lib/';
+const lib_short_path = '../Moonad/lib/';
 
 function get_files_info() {
   var info = [];

@@ -10,6 +10,7 @@ const bot = new Telegraf(process.env.TOKEN);
 Description: Easily get Formality library's code and information about Moonad and Formality.
 */
 
+console.log("Moonadog read to listen from Telegram");
 chat(bot);
 commands(bot);
 inline_query(bot);
